@@ -1,0 +1,22 @@
+{
+  "name": "jurassicpark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dinosaur.js",
+  "scripts": {
+    "test": "mocha specs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PMGH/jurassic_park.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PMGH/jurassic_park/issues"
+  },
+  "homepage": "https://github.com/PMGH/jurassic_park#readme",
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  }
+}
