@@ -53,4 +53,32 @@ describe('park tests', function(){
     assert.deepStrictEqual(park.dinosaursMoreOffspringThan(2), expected);
   });
 
+  it('should be able to calculate number of dinosaurs after year one, starting with 1 dinosaur', function(){
+    // arrange
+    park.add(dinosaur1);
+    var expected = [ 1, 3];
+
+    // assert
+    assert.deepStrictEqual(park.calculateGrowth(1), expected);
+  });
+
+  it('should be able to calculate number of dinosaurs after year two, starting with 1 dinosaur', function(){
+    // arrange
+    park.add(dinosaur1);
+    var expected = [ 1, 3, 9];
+
+    // assert
+    assert.deepStrictEqual(park.calculateGrowth(2), expected);
+  });
+
+  it('should be able to calculate number of dinosaurs after year two, starting with 2 dinosaurs', function(){
+    // arrange
+    park.add(dinosaur1);
+    park.add(dinosaur1);
+    var expected = [ 2, 6, 18];
+
+    // assert
+    assert.deepStrictEqual(park.calculateGrowth(2), expected);
+  });
+
 });
